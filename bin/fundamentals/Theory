@@ -1,0 +1,31 @@
+Call Hierarchy(Constructor/static and instance methods):
+	Order of execution;
+	- static block
+	- instance block
+	- Constructor
+	
+	with child/parent relationship
+	- Parent static block
+	- child static block
+ 	- Parent instance block
+	- Parent Constructor
+	- child instance block
+	- child Constructor
+	
+Final, finally and finalize
+
+	- final    :  keyword
+	- finally  :  block
+	- finalize :  method (called by gc)
+	
+What is equals and hashcode method and its contract
+
+	- Hashcode : used to generate unique or reference number of an object through which we can easily identify uniqueness of an object
+
+	- Equals : used to compare object based on its content
+
+	- Both method present in java.lang.Object class
+	
+
+
+	

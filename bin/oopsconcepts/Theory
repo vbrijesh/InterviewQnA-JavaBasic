@@ -1,0 +1,55 @@
+OOPS Concept:
+	- Encapsulation (private variable public setter n getter methods)
+	- Inheritance (implements/extend)
+	- Polymorphism (overloading and overriding)
+	- Abstraction (Hiding impl to end user)
+	
+	
+https://www.geeksforgeeks.org/overriding-in-java/?ref=lbp
+
+Overriding Rules:
+	- Cannot reduce the visibility of the inherited method from Parent in child class.
+	
+	- static(overhide) and private method cannot be overriden.
+	
+	- Final methods can not be overridden 
+	
+	- The overriding method must have same return type (or subtype).
+	
+	- If the super-class overridden method does not throw an exception, 
+	  subclass overriding method can only throws the unchecked exception.
+	  
+	- If the super-class overridden method does throws an exception, 
+	  subclass overriding method can only throw same, subclass exception.
+	  
+	  
+Overloading allows different methods to have the same name,
+but different number of input parameters or type of input parameters or both.
+Overloading is related to compile-time (or static) polymorphism.
+
+https://www.geeksforgeeks.org/overloading-in-java/?ref=lbp
+Overloading Rules:
+	- Method arguments Should be different.
+	- we can overload static methods.
+	
+	
+Call Hierarchy(Constructor/static and instance methods):
+	Order of execution;
+	- static block
+	- instance block
+	- Constructor
+	
+	with child/parent relationship
+	- Parent static block
+	- child static block
+ 	- Parent instance block
+	- Parent Constructor
+	- child instance block
+	- child Constructor
+	
+Final, finally and finalize
+
+	- final    :  keyword
+	- finally  :  block
+	- finalize :  method (called by gc)
+	
