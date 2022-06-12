@@ -57,7 +57,7 @@ public class Employee {
 
     public static void main(String[] args) {
 
-        Employee employee1 = new Employee(101, "Basant");
+        Employee employee1 = new Employee(101, "ABC");
         Employee employee2 = new Employee(102, "XYZ");
 
         System.out.println("is hashcode() same : " + (employee1.hashCode() == employee2.hashCode()));
