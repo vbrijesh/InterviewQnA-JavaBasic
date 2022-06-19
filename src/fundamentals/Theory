@@ -78,5 +78,34 @@ How to write your own custom immutable class
 	- Perform cloning of mutable objects while returning from getter method
 	
 Generics
+
+		https://www.youtube.com/watch?v=ANzefryEvRo
+		
+		https://www.youtube.com/watch?v=OddYBiLxZ9Y
+		
+		m((List<String> list)) // Except String variables
+		- we can add only string type of objects to the list
+		list.add("tes");
+		list.add(null);
+		list.add(10); CT Error
+		
+		
+		m((List<?> list)) // we can call this method by passing any type of object. but can we add any value inside it?
+		
+
 	-https://www.baeldung.com/java-generics-interview-questions
+	
+	-At class level super is not allowed
+		class D<T super Number>{} //Give CE
+		class D<T extends Number>{} // work normally
+		
+	- List<? extends Number> number = new ArrayList<String>(); //Error
+	- List<? extends Object> o = new ArrayList<String>(); // No Error
+	
+	we cant define same method name with different generic argument
+		public void ma(ArrayList<Integer> i) {}	   
+	    public void ma(ArrayList<String> i) {}
+	    //Error: Erasure of method ma(ArrayList<Integer>) is the same as another method in type GenericsTest
+	    
+	At class level generic can be add after class name  and at method before return type
 	  
