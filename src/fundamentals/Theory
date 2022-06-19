@@ -76,4 +76,7 @@ How to write your own custom immutable class
 	- You can initialize variables in constructor
 
 	- Perform cloning of mutable objects while returning from getter method
+	
+Generics
+	-https://www.baeldung.com/java-generics-interview-questions
 	  
