@@ -15,6 +15,11 @@ public class Test {
 				  .mapToObj(Character::toString)
 				  .collect(Collectors.joining());
 		System.out.println(output);
+		
+		
+		String s = new String("A");
+		String s1 = new String("A");
+		System.out.println(s.equals(s1));
 
 	}
 
